@@ -1,0 +1,948 @@
+section{
+	padding: 15rem 0;
+	@include responsive("medium"){
+		padding: 5rem 0;
+	}
+}
+// about section
+.about{
+	padding: 12.5rem 0 13.5rem 0;
+	border-bottom: 1px solid $lineGrey;
+	@include responsive("custom"){
+		padding: 0 4rem;
+	}
+	@include responsive("medium"){
+		padding: 5rem 0;
+	}
+	img{
+		width: 50%;
+		height: 100%;
+		@include responsive("custom"){
+			display: none;
+		}
+	}
+}
+.subAbout{
+	display: flex;
+	margin-top: 6rem;
+	@include responsive("medium"){
+		margin-top: 4rem;
+	}
+}
+.better{
+	width: calc(50% - 6.5rem);
+	margin-right: 6.5rem;
+	@include responsive("custom"){
+		width: 100%;
+		margin-right: 0;
+	}
+	h3{
+		margin-bottom: 4rem;
+		@include responsive("medium"){
+			text-align: center;
+		}
+	}
+	p{
+		line-height: 2.4rem;
+	}
+}
+.dropdown{
+	margin-top: 2.5rem;
+}
+.dropdown__item{
+	margin-bottom: 3rem;
+}
+summary{
+	display: block;
+	height: 5rem;
+	box-shadow: 0px 0px 7.92px 0.08px rgba(0, 0, 0, 0.1);
+	font-weight: 700;
+	display: flex;
+	align-items: center;
+	display: inline-block;
+	padding: 2rem 0;
+	width: 100%;
+	&::before{
+		content: '\002b';
+		margin: 0 1rem 0 2rem ;
+	}
+}
+summary::-webkit-details-marker{
+	display: none;
+}
+details[open] > summary{
+	font-size: 1.8rem;
+	color: $white;
+	background: $accent;
+	padding: 1.3rem 0 2rem 0;
+	&::before{
+		content: '\2014';
+	}
+}
+details p{
+	padding: 1.5rem 2rem;
+	display: flex;
+	align-items: center;
+	border: 1px solid $lineGrey;
+}
+// education section
+.education{
+	h2{
+		text-transform: capitalize;
+	}
+	h5{
+		text-align: center;
+		text-transform: capitalize;
+		color: $accent;
+		font-weight: 400;
+		margin: 2.5rem 0 3rem 0;
+	}
+	p{
+		text-align: center;
+		line-height: 3rem;
+	}
+	.break{
+		@include responsive("custom"){
+			display: inline;
+		}
+	}
+}
+.services{
+	display: flex;
+	justify-content: space-between;
+	margin: 3.5rem 0 7.5rem 0;
+	@include responsive("medium"){
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: 4rem;
+	}
+	h6{
+		margin: 4.5rem 0 3rem 0;
+	}
+}
+.services__item{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	@include responsive("medium"){
+		margin-bottom: 2rem;
+	}
+	p{
+		line-height: 2.4rem;
+	}
+}
+.degree{
+	margin-left: 0;
+	img{
+		width: 15rem;
+	}
+}
+.resume img{
+	width: 15.9rem;
+}
+.books{
+	margin-right: 0;
+	img{
+		width: 16.8rem;
+	}
+}
+.educationButton{
+	display: flex;
+	justify-content: center;
+	font-size: 1.3rem;
+}
+.educationButton__item{
+	background: $buttonBlack;
+	padding: 0 3rem;
+	margin: 0 1rem;
+	@include responsive("medium"){
+		padding: 0 2rem;
+	}
+	&:hover{
+		background: $accent;
+	}
+}
+.educationButton__item--active{
+	background: $accent;
+	padding: 0 4rem;
+	@include responsive("medium"){
+		padding: 0 2rem;
+	}
+	&:hover{
+		background: $buttonBlack;
+	}
+}
+// featured section
+.featured{
+	background: $bodyGrey;
+	h2{
+		font-size: 3.5rem;
+		margin-bottom: 2.7rem;
+	}
+	p{
+		text-align: center;
+	}
+	.wrapper{
+		display: flex;
+		flex-direction: column;
+	}
+}
+.courses{
+	margin: 5.5rem 0 8rem 0;
+	display: flex;
+	@include responsive("medium"){
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: 4rem;
+	}
+}
+.courses__item{
+	background: $white;
+	box-shadow: 0px 0px 28.13px 0.87px rgba(0, 0, 0, 0.1);
+	margin: 0 2.4rem;
+	@include responsive("medium"){
+		margin: 0 0 2rem 0;
+	}
+}
+.application{
+	margin-left: 0;
+}
+.chemical{
+	margin-right: 0;
+}
+.textArea{
+	padding: 3rem;
+	i{
+		margin-right: 1rem;
+	}
+	p{
+		text-align: left;
+		font-size: 1rem;
+		line-height: 1.8rem;
+	}
+	.calendar{
+		font-size: 1.2rem;
+	}
+	h6{
+		margin: 2rem 0;
+		text-transform: capitalize;
+		font-size: 1.4rem;
+		font-weight: 400;
+	}
+	button{
+		height: 3rem;
+		background: $accent;
+		padding: 0 1.7rem;
+		text-transform: capitalize;
+		font-size: 1rem;
+		margin-top: 1.6rem;
+		&:hover{
+			background: $buttonBlack;
+		}
+		span{
+			font-size: 1.1rem;
+			margin-left: 0.3rem;
+		}
+	}
+}
+.featuredButton{
+	color: $fontDark;
+	border: 1px solid $accent;
+	padding: 0 4rem;
+	font-size: 1.6rem;
+	margin: 0 auto;
+	@include responsive("medium"){
+		padding: 0 2rem;
+	}
+	&:hover{
+		background: $accent;
+	}
+}
+// news section
+.news{
+	padding-bottom: 0;
+	h2{
+		margin-bottom: 7.5rem;
+		@include responsive("medium"){
+			margin-bottom: 4rem;
+		}
+	}
+}
+.headlines{
+	display: flex;
+	@include responsive("medium"){
+		flex-direction: column;
+		align-items: center;
+	}
+}
+.headlines__item{
+	margin: 0 2rem;
+	position: relative;
+	@include responsive("medium"){
+		margin: 0 0 4rem 0;
+	}
+	&:first-child{
+		margin-left: 0;
+	}
+	&:last-child{
+		margin-right: 0;
+	}
+	h6{
+		margin: 2.5rem 0 2rem 0;
+		font-size: 1.4rem;
+		line-height: 3rem;
+		text-transform: capitalize;
+	}
+	p{
+		width: 25rem;
+		font-size: 1.2rem;
+		line-height: 2.4rem;
+	}
+	.more{
+		margin: 1rem 0 0 0.3rem;
+		text-transform: lowercase;
+		color: $accent;
+		&:hover{
+			color: $fontDark;
+		}
+	}
+	.fa-long-arrow-right{
+		margin-left: 0.5rem;
+	}
+}
+.datebox{
+	position: absolute;
+	width: 6.3rem;
+	height: 6.3rem;
+	color: $white;
+	background: $accent;
+	padding: 1.2rem;
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 2rem;
+	right: 2.5rem;
+	top: 25rem;
+}
+.newsButton{
+	display: flex;
+	justify-content: center;
+	font-size: 1.6rem;
+	margin-top: 9.5rem;
+	@include responsive("medium"){
+		margin-top: 0;
+	}
+}
+.newsButton__item{
+	background: $buttonBlack;
+	padding: 0 4rem;
+	margin: 0 1.5rem;
+	@include responsive("custom"){
+		padding: 0 1rem;
+	}
+	&:hover{
+		background: $accent;
+	}
+}
+.newsButton__item--active{
+	background: $accent;
+	&:hover{
+		background: $buttonBlack;
+	}
+}
+// teacher section
+.teacher{
+	.wrapper{
+		display: flex;
+		flex-direction: column;
+	}
+	h2{
+		font-size: 3.5rem;
+		margin-bottom: 2.7rem;
+	}
+	p{
+		line-height: 2.4rem;
+		text-align: center;
+		margin: 0 auto;
+		width: 45rem;
+		@include responsive("medium"){
+			width: auto;
+		}
+	}
+}
+.instructor{
+	margin: 7.5rem 0 10rem 0;
+	display: flex;
+	justify-content: space-between;
+	@include responsive("medium"){
+		flex-direction: column;
+		align-items: center;
+		margin: 4rem 0;
+	}
+}
+.instructor__item{
+	@include responsive("medium"){
+		margin: 0 0 2rem 0;
+	}
+	h4{
+		font-size: 2.5rem;
+		margin: 4rem 0 2rem 0;
+	}
+	h6{
+		text-transform: capitalize;
+		color: $accent;
+	}
+}
+.instructor__item:nth-of-type(2){
+	margin: 0 4.5rem;
+	@include responsive("medium"){
+		margin: 0 0 2rem 0;
+	}
+}
+.connect {
+	display: flex;
+	margin-top: 3rem;
+	h6{
+		color: $fontGrey;
+		text-transform: uppercase;
+		font-weight: 400;
+	}
+}
+.instructorSocial{
+	display: flex;
+	justify-content: space-between;
+	font-size: 2rem;
+	margin-left: 3.5rem;
+	vertical-align: middle;
+	width: 7rem;
+	i:hover{
+		color: $accent;
+	}
+}
+.teacherButton{
+	font-size: 1.6rem;
+	padding: 0 4.5rem;
+	background: $accent;
+	margin: 0 auto;
+	@include responsive("custom"){
+		padding: 0 2rem;
+	}
+	&:hover{
+		background: $buttonBlack;
+	}
+}
+// pricing section
+.pricing{
+	background: $bodyGrey;
+	text-align: center;
+	h6{
+		font-weight: 400;
+		margin-bottom: 3rem;
+	}
+}
+.prices{
+	margin-top: 6.7rem;
+	display: flex;
+	justify-content: space-between;
+	@include responsive("medium"){
+		flex-direction: column;
+		align-items: center;
+		margin-top: 4rem;
+	}
+}
+.prices__item{
+	background: $white;
+	box-shadow: 0px 0px 28.13px 0.87px rgba(0, 0, 0, 0.1);
+	margin: 0 2rem;
+	width: calc(100% / 3 - (4rem / 3));
+	&:first-child{
+		margin-left: 0;
+	}
+	&:last-child{
+		margin-right: 0;
+	}
+	@include responsive("medium"){
+		margin: 0 0 2rem 0;
+		width: 36rem;
+	}
+	h4{
+		margin: 2.6rem 0;
+	}
+}
+.free h4{
+	text-transform: capitalize;
+}
+.priceBanner{
+	background: $bodyGrey;
+	font-family: $bodyFont;
+	padding: 3.5rem 0 3rem 0;
+	h6{
+		margin-bottom: 1.5rem;
+	}
+	h4{
+		margin: 0;
+		text-transform: capitalize;
+		font-weight: 400;
+	}
+	&:hover{
+		background: $accent;
+		h4, h6{
+			color: $white;
+		}
+	}
+}
+.priceBanner--active{
+	background: $accent;
+	h4, h6{
+		color: $white;
+	}
+	&:hover{
+		background: $bodyGrey;
+		h4, h6{
+			color: $fontDark;
+		}
+	}
+}
+.plan{
+	text-align: left;
+	padding: 4rem 7.5rem 2rem 7.5rem;
+	border-bottom: 1px solid $lineGrey;
+	height: 30rem;
+	@include responsive("custom"){
+		padding: 4rem 2rem 2rem 2rem;
+	}
+	p{
+		margin-bottom: 2rem;
+	}
+	i{
+		color: $accent;
+		margin-right: 1.2rem;
+		&:hover{
+			color: $fontDark;
+		}
+	}
+}
+.plan--active{
+	color: $fontDark;
+}
+.choose{
+	padding: 2.5rem 0;
+	text-transform: uppercase;
+	font-weight: 700;
+	&:hover{
+		color: $accent;
+	}
+}
+.choose--active{
+	color: $accent;
+	&:hover{
+		color: $fontDark;
+	}
+}
+// testimonial section
+.testimonial{
+	border-bottom: 1px solid $lineGrey;
+	h2{
+		font-size: 3.5rem;
+		margin-bottom: 6.5rem;
+		@include responsive("medium"){
+			margin-bottom: 4rem;
+		}
+	}
+	.bubble__item{
+		background: $lineGrey;
+		&:hover{
+			background: $accent;
+		}
+	}
+	.bubble__item--active{
+		background: $accent;
+		&:hover{
+			background: $lineGrey;
+		}
+	}
+}
+.student{
+	display: flex;
+	margin-bottom: 7rem;
+	@include responsive("medium"){
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: 0;
+	}
+	img{
+		margin-right: 2.5rem;
+		width: 17.2rem;
+		height: 15rem;
+		float: left;
+	}
+}
+.student__item{
+	border: 1px solid $lineGrey;
+	padding: 3.5rem 2.5rem;
+	position: relative;
+	@include responsive("medium"){
+		margin: 0 2rem 2rem 2rem;
+	}
+	&::before{
+		content: "";
+		background: $accent;
+		width: 85%;
+		height: 2px;
+		position: absolute;
+		top: -1px;
+		right: -1px;
+	}
+	&:first-child{
+		margin-right: 4rem;
+		@include responsive("medium"){
+			margin: 0 2rem 2rem 2rem;
+		}
+	}
+	p{
+		line-height: 3rem;
+		margin-bottom: 4rem;
+	}
+	h6{
+		font-style: italic;
+		text-transform: capitalize;
+		.happy{
+			font-weight: 400;
+			color: $fontGrey;
+		}
+	}
+}
+// gallery
+.pictures{
+	text-align: center;
+	h2{
+		font-size: 3.5rem;
+		margin-bottom: 2.5rem;
+	}
+	p{
+		font-size: 2rem;
+		line-height: 3rem;
+	}
+	.circle{
+		width: 5rem;
+		height: 5rem;
+		border-radius: 50%;
+		border: 1px solid $white;
+		color: $white;
+		font-size: 2.5rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 0 0.7rem;
+	}
+}
+.filter{
+	display: flex;
+	margin-top: 5rem;
+	justify-content: center;
+	@include responsive("small"){
+		flex-wrap: wrap;
+	}
+}
+.filter__item{
+	padding: 1.4rem 1.8rem;
+	background: $bodyGrey;
+	margin: 0 0.5rem;
+	@include responsive("small"){
+		width: 12.7rem;
+		margin-bottom: 1rem;
+	}
+	&:hover{
+		background: $accent;
+		h4{
+			font-size: 2.4rem;
+			font-weight: 700;
+			color: $white;
+		}
+	}
+	h4{
+		font-size: 2.3rem;
+		font-weight: 400;
+		text-transform: capitalize;
+	}
+}
+.filter__item--active{
+	background: $accent;
+	&:hover{
+		background: $bodyGrey;
+		h4{
+			font-size: 2.3rem;
+			font-weight: 400;
+			color: $fontDark;
+		}
+	}
+	h4{
+		font-size: 2.4rem;
+		font-weight: 700;
+		color: $white;
+	}
+	
+}
+.gallery{
+	margin: 4.7rem 0 6.2rem 0;
+	display: flex;
+	flex-wrap: wrap;
+	@include responsive("medium"){
+		align-items: center;
+		margin: 4rem 0;
+	}
+	img{
+		height: 100%;
+	}
+}
+.gallery__item{
+	width: calc(100% / 3);
+	position: relative;
+	font-size: 0;
+	border: 1px solid $white;
+	@include responsive("medium"){
+		width: 100%;
+		margin: 0 2rem 2rem 2rem;
+	}
+	&:hover > .overlay{
+		visibility: visible;
+	}
+}
+.gallery__item--active:hover > .overlay{
+	visibility: hidden;
+}
+.overlay{
+	display: flex;
+	visibility: hidden;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	justify-content: center;
+	align-items: center;
+	background: rgba(66, 199, 148, 0.8);
+}
+.overlay--active{
+	visibility: visible;
+}
+.galleryButton{
+	color: $fontDark;
+	border: 1px solid $accent;
+	padding: 0 5.5rem;
+	font-size: 1.8rem;
+	margin: 0 auto;
+	&:hover{
+		background: $accent;
+	}
+}
+// newsletter section
+.newsletter{
+	background: $accent;
+	color: $white;
+	padding: 5.3rem 0;
+	@include responsive("medium"){
+		padding: 3rem 0;
+	}
+	.wrapper{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		@include responsive("medium"){
+			flex-direction: column;
+		}
+	}
+	h4{
+		font-size: 2.6rem;
+		color: $white;
+		@include responsive("medium"){
+			text-align: center;
+		}
+	}
+}
+.subscribe{
+	display: flex;
+	border: 1px solid $white;
+	height: 7rem;
+	width: 57rem;
+	border-radius: 3.5rem;
+	padding: 0 3.5rem 0 3rem;
+	align-items: center;
+	justify-content: space-between;
+	@include responsive("medium"){
+		margin-top: 2rem;
+		width: auto;
+	}
+	&:hover{
+		background: $white;
+		color: $accent;
+		border: none;
+		.submit{
+			border-left: 1px solid $accent
+		}
+		h4{
+			color: $accent;
+		}
+	}
+	p{
+		font-size: 1.8rem;
+		font-weight: 700;
+		@include responsive("medium"){
+			margin-right: 2rem;
+		}
+	}
+}
+.submit{
+	height: 7rem;
+	border-left: 1px solid $white;
+	display: flex;
+	align-items: center;
+	width: calc(100% / 3);
+	@include responsive("medium"){
+		width: auto;
+	}
+	h4{
+		font-size: 2.4rem;
+		@include responsive("small"){
+			display: none;
+		}
+	}
+	i{
+		font-size: 2.4rem;
+		margin: 0 1.8rem;
+	}
+}
+// contact section
+.contact{
+	.wrapper{
+		display: flex;
+		@include responsive("medium"){
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
+		}
+	}
+	h3{
+		text-transform: capitalize;
+		font-size: 2.8rem;
+		margin-bottom: 3rem;
+	}
+	.circle{
+		width: 4.7rem;
+		height: 4.7rem;
+		border-radius: 50%;
+		background: $accent;
+		color: $white;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 2.2rem;
+		margin-right: 3.5rem;
+		@include responsive("medium"){
+			display: none;
+		}
+	}
+}
+.touch{
+	width: calc((200% / 3) - 2.25rem);
+	margin-right: 2.25rem;
+	@include responsive("medium"){
+		width: 100%;
+		margin-right: 0;
+	}
+}
+.address{
+	width: calc((100% / 3) - 2.25rem);
+	margin-left: 2.25rem;
+	@include responsive("medium"){
+		width: 100%;
+		margin-top: 4rem;
+		margin-left: 0;
+	}
+	h3{
+		margin-bottom: 4rem;
+		@include responsive("medium"){
+			margin-bottom: 2rem;
+		}
+	}
+	h5{
+		color: $fontGrey;
+		font-size: 2.2rem;
+		text-transform: capitalize;
+		font-weight: 400;
+		line-height: 3.5rem;
+		@include responsive("medium"){
+			margin-top: 1rem;
+		}
+	}
+}
+input{
+	height: 6rem;
+	width: calc(50% - 1.7rem);
+	border: none;
+	border-radius: 1rem;
+	padding: 0;
+	padding-left: 3rem;
+	border: 1px solid $lineGrey;
+	&::placeholder{
+		color: $fontGrey;
+		font-size: 2rem;
+		line-height: 2rem;
+	}
+}
+.inputName{
+	margin-right: 3rem;
+	padding-left: 4rem;
+}
+.inputSubject{
+	width: 100%;
+	margin: 2.5rem 0;
+}
+textarea{
+	border: none;
+	border-radius: 1rem;
+	padding: 3rem 0 0 3rem;
+	height: 15rem;
+	width: 100%;
+	border: 1px solid $lineGrey;
+	resize: none;
+	&::placeholder{
+		color: $fontGrey;
+		font-size: 2rem;
+	}
+}
+.touchButton{
+	border-radius: 1rem;
+	background: $accent;
+	padding: 0 4.7rem;
+	text-transform: capitalize;
+	font-size: 2rem;
+	margin-top: 4rem;
+	&:hover{
+		background: $buttonBlack;
+	}
+}
+.address__item{
+	display: flex;
+	margin-bottom: 4rem;
+	@include responsive("medium"){
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: 2rem;
+	}
+	.fa-map-marker{
+		margin: 0 1.7rem;
+	}
+	.fa-phone{
+		margin: 0 1.5rem;
+	}
+	.fa-envelope-o{
+		margin: 0 1.2rem;
+	}
+}
+.address__item:last-child{
+	@include responsive("medium"){
+		margin-bottom: 0;
+	}
+}
+
+
